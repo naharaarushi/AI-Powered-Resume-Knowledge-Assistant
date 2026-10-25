@@ -38,27 +38,27 @@ This project provides an objective, transparent, and educational self-assessment
 
 ```mermaid
 flowchart TD
-    A["company_requirements.xlsx\n(Excel Spreadsheet with Companies & Roles)"] -->|Pandas & OpenPyXL| B["Streamlit Dashboard"]
+    A["company_requirements.xlsx<br/>(Excel Spreadsheet)"] -->|Pandas and OpenPyXL| B["Streamlit Dashboard"]
     
-    C["SKILL_DICTIONARY (Python Dict in app.py)\n(Normalized Aliases & Word Boundaries)"] --> D["Normalized Skill Extraction Engine"]
+    C["SKILL_DICTIONARY<br/>(Python Dictionary in app.py)"] --> D["Normalized Skill Extraction Engine"]
     
-    E["Student PDF Resume\n(Uploaded or Selected Demo File)"] -->|PyPDF| F["Raw Text Extraction"]
+    E["Student PDF Resume<br/>(Uploaded or Demo File)"] -->|PyPDF| F["Raw Text Extraction"]
     F --> D
     
-    B -->|Select Company & Job Role| G["Target Role Specifications\n(Required vs Preferred Skills)"]
-    D -->|Identified Resume Skills| H["Skill Gap Comparator"]
+    B -->|Select Company and Role| G["Target Role Specifications<br/>(Required vs Preferred)"]
+    D -->|Identified Skills| H["Skill Gap Comparator"]
     G --> H
     
-    H -->|Calculate Coverage| I["Match Percentage Metric\n(Matched Req / Total Req * 100)"]
-    H -->|Tabular Presentation| J["Pandas Comparison Table\n(Status Badges & Action Recommendations)"]
+    H -->|Calculate Coverage| I["Match Percentage Metric"]
+    H -->|Tabular Layout| J["Pandas Comparison Table"]
     
-    H -->|Unmatched Required Skills| K["LEARNING_ROADMAP (Python Dict in app.py)\n(Offline Topic Guides)"]
-    K --> L["Actionable Learning Roadmaps\n(Why It Matters, Topics, Exercises, Projects)"]
+    H -->|Unmatched Required Skills| K["LEARNING_ROADMAP<br/>(Python Dictionary in app.py)"]
+    K --> L["Actionable Learning Roadmaps"]
     
-    H & F -->|Optional (If Google API Key entered)| M["Google Gemini AI Career Mentor\n(Personalized 4-Week Study Plan)"]
+    H -->|Optional: With Google API Key| M["Google Gemini AI Career Mentor"]
+    F -->|Resume Context| M
 ```
 
----
 
 ## 📁 4. Project Directory Structure
 
