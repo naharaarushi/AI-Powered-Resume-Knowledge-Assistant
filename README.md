@@ -1,6 +1,6 @@
-# 🎯 AI-Powered Company Requirement-Based Resume Skill Gap Analyzer
+# 🎯 AI-Powered Resume Knowledge Assistant
 
-An educational, web-based career-readiness application designed for **BCA NTCC project evaluation**. 
+An educational, web-based career-readiness application. 
 
 The system benchmarks a student's uploaded PDF resume against predefined company job specifications maintained in an **Excel spreadsheet (`company_requirements.xlsx`)** to identify **demonstrated competencies**, **critical skill gaps**, and **tailored learning roadmaps**.
 
